@@ -8,7 +8,7 @@ public class TestCompteur{
             c1.incrementer();
             System.out.println(c1);
         }
-        for (int i=0;i<20;i--){
+        for (int i=0;i<20;i++){
             c1.decrementer();
             System.out.println(c1);
         }

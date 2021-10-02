@@ -1,17 +1,23 @@
 package compteurs;
 public class CompteurCycle extends CompteurBorne{
     public CompteurCycle(int max){
+
         super(max);
     }
     public CompteurCycle(int max,int valeur){
+
         super(max,valeur);
     }
-    
+
+    public CompteurCycle(int valeur, int max, int min) {
+        super(valeur, max, min);
+    }
+
     public void incrementer(){
         if(getMax() > getVal()){
             super.incrementer();
             if(getMax()==getVal()) {
-            	setVal(0);
+                setVal(0);
             }
         }
     }
@@ -19,12 +25,12 @@ public class CompteurCycle extends CompteurBorne{
         if(getVal()>=0){
             setVal(getVal()-1);
             if(getVal()==-1) {
-            	setVal(getMax()-1);
+                setVal(getMax()-1);
             }
         }
     }
     public String toString(){
-       return super.toString();
+        return super.toString();
     }
 
 }

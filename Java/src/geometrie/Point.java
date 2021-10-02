@@ -8,10 +8,24 @@ public class Point {
         x=abs;
         y=ord;
     }
-    public void afficher(){
-    System.out.println("J'ai pour abscisse :"+ x + " et pour ordonnee : " + y);
-
+    public void translator(int dx, int dy){
+        x+=dx;
+        y+=dy;
     }
 
+    public void setX(int x) {
+        this.x = x;
+    }
 
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    @Override
+    public String toString() {
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }
